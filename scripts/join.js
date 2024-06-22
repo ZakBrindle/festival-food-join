@@ -96,10 +96,10 @@ function adjustRegistrationContainer() {
 
       hideItemsOnSmallScreen();
 
-      mainLogo.style.width = 'calc(100% - 40px)'; // 20px padding on each side
+      mainLogo.style.width = 'calc(100% - 80px)'; // 20px padding on each side
       mainLogo.style.marginTop = '40px';
-      mainLogo.style.paddingLeft = '20px';
-      mainLogo.style.paddingRight = '20px';
+      mainLogo.style.paddingLeft = '40px';
+      mainLogo.style.paddingRight = '40px';
 
 
 
