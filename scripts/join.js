@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const rect2 = el2.getBoundingClientRect();
 
       return !(
-          rect1.top > rect2.bottom + padding ||
-          rect1.right < rect2.left - padding ||
-          rect1.bottom < rect2.top - padding ||
-          rect1.left > rect2.right + padding
+          rect1.top > rect2.bottom ||
+          rect1.right < rect2.left ||
+          rect1.bottom < rect2.top ||
+          rect1.left > rect2.right
       );
   }
 
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   checkCollisions(); // Initial check
   adjustRegistrationContainer();
-  setTimeout(checkCollisions, 1000); // 1000 milliseconds = 1 second
+  setTimeout(checkCollisions, 500); // 1000 milliseconds = 1 second
 });
 
 
@@ -96,7 +96,7 @@ function adjustRegistrationContainer() {
 
       });
       mainLogo.style.maxWidth = '90%';
-      mainLogo.style.marginTop = '20px';
+      mainLogo.style.marginTop = '40px';
       mainLogo.style.marginLeft = '10px';
       mainLogo.style.marginRight = '-70px';
 
