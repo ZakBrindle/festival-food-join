@@ -72,6 +72,9 @@ document.addEventListener("DOMContentLoaded", function() {
   checkCollisions(); // Initial check
   adjustRegistrationContainer();
   setTimeout(checkCollisions, 500); // 1000 milliseconds = 1 second
+  hideItemsOnSmallScreen();
+  setTimeout(hideItemsOnSmallScreen, 500); // 1000 milliseconds = 1 second
+
 });
 
 
