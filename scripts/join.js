@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
           if (isColliding(logo, image, 40)) {
               image.style.display = 'none';
           } else {
-              image.style.display = 'block';
+             
           }
       });
   }
