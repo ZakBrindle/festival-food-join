@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Festival Food</title>
+        <!-- Link to your stylesheet -->
+        <link rel="stylesheet" href="./styles.css">
+      </head>
+<body>
+
+    <img src="https://i.imgur.com/TaXRGim.png" alt="Festival Food" id="app-image" style="max-width: 1000px; width:100%; height: auto; display: block; margin: auto;">
+
+    <!-- SELECT ADDRESS - ONLY SHOWN WHEN DELIVERY IS ACTIVE -->
+    <div id="select-address-container">
+        <div id="glamping-or-cards-container">
+            <button id="glamping-btn" class="option-button" style="max-width: 500px; background-image: url('./assets/glamping.jpg');" (click)="showGlamping()">
+                Glamping
+            </button>
+            <button id="cards-btn" class="option-button" style="max-width: 500px; background-image: url('./assets/playing-cards.jpg');" (click)="showCamping()">
+                Camping
+            </button>
+        </div>
+     
+    </div><!-- END OF SELECT ADDRESS - ONLY SHOWN WHEN DELIVERY IS ACTIVE -->
+    
+    <button hidden id="menuButton">
+        <img src="https://i.imgur.com/vOjWmEL.png" alt="Menu">
+    </button>
+    
+    <div style="text-align: center;" id="notification" >
+        <h2 style="text-align: center;" class="main-title">Delivery Status</h2><br>
+        <p style="text-align: center;" class="main-text" id="status-text">Delivery is currently <span id="status">offline</span>. <br>There are no Feast Runners available.<br><br></p>
+        <br></div>
+
+      
+
+
+        <div class="board-message-container">
+            <div class="top-buttons">
+                <input type="radio" id="festival-goer-board-btn" name="buttonGroup" value="Festival Goer" class="hidden-radio" checked>
+                <label for="festival-goer-board-btn" class="no-border radio-label">Festival Goers!</label>
+                <input type="radio" id="vendor-board-btn" name="buttonGroup" value="Vendor" class="hidden-radio">
+                <label for="vendor-board-btn" class="no-border radio-label">Vendor's click here!</label>
+            </div>
+            <br><br><br><br><br>
+              <div id="board-message-festival-goers">
+                <h2 style="text-align: left;" class="main-title">Unleash Your Festival Experience with festival-food.co.uk! 🍕🎸</h2><br><br><br>
+                <p class="main-text-board-message">Hey, Festival Warriors!<br><br><br>
+                    Are you pumped for <span id="status">Beatherder 2024</span>? So are we, and we've got something that'll make your festival experience a total game-changer. Imagine this: You're lounging at your tent, vibing to the distant beats, but your stomach starts to talk—and it's not humming along to the tunes.<br><br><br>
+                    We're <span id="status">festival-food.co.uk</span>, and we've got you covered! We bring the festival's tastiest bites straight to your tent door. Yup, you heard that right!<br><br><br>
+                    <b>Why you'll love this:</b><br></p>
+                    <ul style="font-size: 23px;">
+                    <li>🎧<b>Keep the Vibe Alive:</b> No need to leave your perfect spot. We bring the food to you.</li><br><br>
+                    <li>🍔<b>Foodie Heaven:</b> Our user-friendly website offers a range of mouthwatering festival favorites.</li><br><br>
+                    <li>🌿<b>Earth-Friendly Munchies:</b> All our packaging is sustainable and biodegradable.</li><br><br>
+                </ul>
+                
+                <p class="main-text-board-message"><b>Here's How It Works:</b><br></p>
+                <ol style="font-size: 23px;" type="1">
+                    <li><b>Online Feast:</b> Browse and choose from a delicious array of options on our website.</li><br><br>
+                    <li><b>Quick & Easy:</b> Our "Feast Runners" will grab your order from the stalls.</li><br><br>
+                    <li><b>Tent-Side Dining:</b> Enjoy your culinary treats as they arrive fresh at your tent.</li><br><br>
+                </ol>
+                
+                <p class="main-text-board-message">
+                So, how about elevating your Beatherder experience to gastronomic heights? Trust us; your taste buds will thank you!<br><br><br>
+                Cheers to making Beatherder 2024 epic in every sense!<br><br>
+                Tasty tunes and happy feasting,<br>
+                The festival-food Team<br><br><br>
+                P.S. Got questions or feedback? Slide into our DMs. We're always up for cooking up something fantastic together!<br><br><br>
+                </p>
+                
+                </div>
+              <div id="board-message-vendors">
+
+             
+        <h2 style="text-align: left;" class="main-title">Elevate Your Beatherder Sales without Missing a Beat—Join festival-food.co.uk! 🍔🎶</h2><br><br><br>
+        <p class="main-text-board-message">The buzz for the upcoming <span id="status">Beatherder</span> Festival is real, and we're guessing you're as pumped as we are! Your mouthwatering food and drink is already a festival favorite, but what if you could reach even more happy campers?. <br><br><br>
+            Allow us to introduce ourselves: We're <span id="status">festival-food</span>, and we've cooked up a tasty proposal for you. Imagine this: festival-goers chilling at their tents, away from the stage but still in the Beatherder groove. They're feeling peckish but don't want to leave their cozy enclave. Enter our service, where they can order your delicious offerings right to their tent!<br><br><br>
+            <b>Here's why this is a recipe for success you won't want to miss:</b><br></p>
+            <ul style="font-size: 23px;">
+            <li>🍴<b>More Sales:</b> Increase your reach to campers who may not make the journey to your stall but still crave quality eats.</li><br><br>
+            <li>🎉 <b>Enhanced Visibility:</b> Your culinary delights will be showcased on our user-friendly website, stirring up even more appetite for your brand.</li><br><br>
+            <li>🍃 <b>Eco-Conscious:</b> Just like you, we care about our planet. All our deliveries will be made using sustainable, biodegradable packaging.</li><br><br>
+        </ul>
+            
+            <p class="main-text-board-message"><b>Here's how it rolls:</b><br></p>
+            <ol style="font-size: 23px;" type="1">
+                <li><b>Simple Ordering:</b> Festival-goers place an order from your stall through our website.</li><br><br>
+                    <li><b>Fresh & Fast:</b> Our dedicated "Feast Runners" zip over to your stall to pick up the orders.</li><br><br>
+                        <li><b>Delivered to the Door...of Their Tent:</b> We ensure your dishes reach the customer's tent as fresh as when they left your stall.</li><br><br>
+                    </ol>
+                    <p class="main-text-board-message">
+            We're looking for your partnership and the go-ahead to deliver your gastronomic creations during Beatherder. And don't worry—our responsibility only covers the food during its journey from your stall to the tents.<br><br>
+            So, what do you say? Ready to amplify your Beatherder sales and reach more bellies this year? Let's chat soon to sort out the delicious details!<br><br><br>
+            Here's to making Beatherder 2024 a feast for the senses!<br><br>
+            Best bites and good vibes, the festival-food Team<br><br><br>
+            P.S. Got questions or suggestions? We're all ears and eager to cook up something unforgettable together!<br><br><br>
+
+        
+        </p>
+    </div>
+
+        <button class="pill-button" onclick="createEmail()">Contact Us</button><br><br>
+        <button class="pill-button-green" onclick="openPDF()">View our brochure (PDF)</button>
+        
+    </div>
+   
+    
+    <div id="glamping-container" style="display: none;">
+        <img id="glamping-img" class="delivery-image" [src]="glampingImageUrl" alt="Glamping">
+        <h2>Select a Yurt or Bell Tent</h2>
+        <div class="center-div-dropdown">
+            <select class="delivery-dropdown-glamping">
+                <optgroup *ngFor="let group of groups" label="{{ group }}">
+                    <option *ngFor="let option of options" [value]="group + option">{{ group }}{{ option }}</option>
+                </optgroup>
+            </select>
+        </div>
+        <button class="next-button-address">Order Food</button>
+        <button class="back-button-address">Go Back</button>
+    </div>
+    
+    <div id="cards-container" style="display: none;">
+        <img id="cards-img" class="delivery-image" [src]="cardsImageUrl" alt="Playing Cards">
+        <h2>Select a Playing Card</h2>
+        <h3>Meet us by the playing card with some form of ID</h3>
+        <div class="center-div-dropdown">
+            <select class="delivery-dropdown-camping">
+                <optgroup *ngFor="let groupCamping of groupsCamping" label="{{ groupCamping }}">
+                    <option *ngFor="let optionCamping of optionsCamping" [value]="optionCamping + ' of ' + groupCamping">{{ optionCamping }} of {{ groupCamping }}</option>
+                </optgroup>
+            </select>
+        </div>
+        <button class="next-button-address">Order Food</button>
+        <button class="back-button-address">Go Back</button>
+    </div>
+    
+    <br>
+    
+    <div hidden id="menu">
+        <hr width="80%"><br><br>
+        <h3>Estimated Delivery: 15-45 mins</h3>
+        <h3>Minimum Order: £10</h3>
+        <button id="btn-food-filter" class="filter-button" [class.active]="foodToggle">Food</button>
+        <button id="btn-drink-filter" class="filter-button" [class.active]="drinkToggle">Drink</button>
+        <div id="food-list-container">
+            <!-- Food items will be dynamically added here -->
+            <div *ngFor="let item of items">
+                <div class="card-container" *ngIf="(item.type === 'food' && foodToggle) || (item.type === 'drink' && drinkToggle)">
+                    <img [src]="item.imgUrl" class="card-img-left" [alt]="item.name">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                        <p class="card-price">£{{ item.price }}</p>
+                        <button class="btn-order-item add-to-basket">Add to basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+    <img id="back-bg" src="https://i.imgur.com/Q3dNnVy.png" hidden/>
+    
+    <div class="settings-container" hidden>
+        <button class="pill-button-delivery-toggle" id="delivery-toggle">Toggle Delivery</button><br>
+        <br>
+        <hr width="80%"><br>
+        <button class="pill-button" id="order-history-btn" type="submit">Order History</button><br>
+        <button class="pill-button" id="logout-button" type="submit">Logout</button>
+    </div>
+    
+    <br><br>
+    <br><br>
+    <p style="text-align: center; font-size: 25px;" class="main-text">BETA MENU PREVIEWS BELOW</p><br>
+    <br><br>
+    <!-- VENDOR LOGIN -->
+    <div class="options-container" id="vendor-container">
+        <p id="vendor-status-text-main" style="text-align: center;" class="vendor-status-text-main">DELIVERIES OFFLINE</p>
+        <p hidden class="vendor-id-text-main">VENDOR ID<br>10</p>
+        <div id="vendor-mainmenu">
+            <i class="fas fa-hat-chef"></i>
+            <p style="text-align: center;" class="main-title">Vendor Menu <br></p> <p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br><br>
+            <p style="text-align: center; font-size: 25px;" class="main-text">Check for incoming deliveries and<br> start preparing the order</p>
+            <br>
+            <br>
+            <div class="order-toggle-container">
+                <p class="toggle-text">Toggle Delivery</p>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="toggleOrders" (change)="toggleOrderStatus()" id="toggleOrdersInput">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="vendor-incoming-orders-btn" class="pill-button-green">View Incoming Orders</button>  <br>  <br>
+            <hr width="80%"><br>
+            <button id="vendor-order-history-btn" class="pill-button">View Order History</button>  <br>
+            <button class="pill-button" id="logout-button" type="submit">Logout</button>
+        </div>
+    
+        <!-- INCOMING ORDERS -->
+        <div hidden id="vendor-incoming-orders">
+            <p style="text-align: center;" class="main-title">
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></p><br>
+            <p style="text-align: center;" class="main-title">Incoming Orders</p><p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br>
+            <br>
+            <p style="text-align: center; font-size: 25px;" class="main-text">A festival-food feast runner has <br>confirmed the order and is on their way.<br></p>
+            <br>
+            <ul id="incoming-orders-list"></ul>
+            <br><br>
+            <hr width="80%"><br>
+            <button id="vendor-incoming-orders-backbtn" class="pill-button">Back</button>  <br>
+        </div>
+    
+        <!-- ORDER HISTORY -->
+        <div hidden id="vendor-order-history">
+            <p style="text-align: center;" class="main-title">
+                <i class="fa fa-history" aria-hidden="true"></i></p><br>
+            <p style="text-align: center;" class="main-title">Order History</p><p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br>
+            <br>
+            <p style="text-align: center; font-size: 25px;" class="main-text">Take a look at all the orders we completed together! <br>Serving the heard with a smile.<br></p>
+            <br>
+            <ul id="order-history-list"></ul>
+            <br><br>
+            <hr width="80%"><br>
+            <button id="vendor-order-history-backbtn" class="pill-button">Back</button>  <br>
+        </div>
+    </div>
+    
+    <br><br> <br><br>
+    
+    <!-- DELIVERY NINJA LOGIN -->
+    <div class="options-container" id="delivery-ninja-container">
+        <p hidden id="delivery-status-text-main" style="text-align: center;" class="vendor-status-text-main">DELIVERIES OFFLINE</p>
+        <div id="delivery-ninja-mainmenu">
+            <i class="fas fa-hat-chef"></i>
+            <p style="text-align: center;" class="main-title">Feast Runner Menu<br></p> <p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br><br>
+            <p style="text-align: center; font-size: 25px;" class="main-text">Check for incoming deliveries and<br> start running!</p>
+            <br>
+            <br>
+            <div class="order-toggle-container">
+                <p class="toggle-text">Toggle Delivery</p>
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="toggleDeliveries" (change)="toggleDeliveryStatus()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <button id="delivery-ninja-incoming-orders-btn" class="pill-button-green">View Incoming Orders</button>  <br>  <br>
+            <hr width="80%"><br>
+            <button id="delivery-ninja-order-history-btn" class="pill-button">View Order History</button>  <br>
+            <button class="pill-button" id="logout-button" type="submit">Logout</button>
+        </div>
+    
+        <!-- INCOMING ORDERS -->
+        <div hidden id="delivery-ninja-incoming-orders">
+            <p style="text-align: center;" class="main-title">
+                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></p><br>
+            <p style="text-align: center;" class="main-title">Incoming Orders</p><p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br>
+            <br>
+            <p style="text-align: center; font-size: 20px;" class="main-text">The vendor has received the order <br>run feast runner run!.<br></p>
+            <br>
+            <ul id="incoming-orders-list-delivery-ninja"></ul>
+            <br><br>
+            <hr width="80%"><br>
+            <button id="delivery-ninja-incoming-orders-backbtn" class="pill-button">Back</button>  <br>
+        </div>
+    
+        <!-- ORDER HISTORY -->
+        <div hidden id="delivery-ninja-order-history">
+            <p style="text-align: center;" class="main-title">
+                <i class="fa fa-history" aria-hidden="true"></i></p><br>
+            <p style="text-align: center;" class="main-title">Order History</p><p style="text-align: center; font-size: 25px;" class="main-text">(preview)</p><br>
+            <br>
+            <p style="text-align: center; font-size: 20px;" class="main-text">Take a look at all the orders we completed together! <br>Serving the heard with a smile.<br></p>
+            <br>
+            <ul id="order-history-list-delivery-ninja"></ul>
+            <br><br>
+            <hr width="80%"><br>
+            <button id="delivery-ninja-order-history-backbtn" class="pill-button">Back</button>  <br>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <p style="text-align: center;" class="main-title">Brochure - Online View</p><br><br>
+    <iframe src="./assets/Elevate the Beatherder Experience with festival-food.pdf" width="100%" height="500px" frameborder="0"></iframe>
+    <br>   <br>
+    
+    <div style="text-align: center;" id="onlyAtBH">
+        <p style="text-align: center;" class="main-text">Only available at</p><br>
+        <img style="max-width: 250px; text-align: center;" src="https://i.imgur.com/u8N7oFu.png" alt="Beatherder" id="bh-image">
+    </div>
+    <br><br><br>
+    
+    
+    <script src="main-script.js"></script>
+</body>
+</html>
