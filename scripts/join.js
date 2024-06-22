@@ -90,8 +90,7 @@ function adjustRegistrationContainer() {
 
       registrationContainers.forEach(container => {
         container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
-        container.style.paddingLeft = '40px';
-        container.style.paddingRight = '20px';
+        
 
 
       });
@@ -112,8 +111,7 @@ function adjustRegistrationContainer() {
   } else {
       registrationContainers.forEach(container => {
         container.style.width = ''; // Reset to original width
-        container.style.paddingLeft = '';
-        container.style.paddingRight = '';
+        
               });
           mainLogo.style.width = '420px';
           mainLogo.style.marginTop = '-10px';
