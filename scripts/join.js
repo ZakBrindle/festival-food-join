@@ -105,7 +105,7 @@ function adjustRegistrationContainer() {
         container.style.paddingLeft = '';
         container.style.paddingRight = '';
               });
-          mainLogo.style.maxWidth = '';
+          mainLogo.style.maxWidth = '420px';
           mainLogo.style.marginTop = '-10px';
           mainLogo.style.paddingRight = '';    
           mainLogo.style.paddingLeft = '';    
