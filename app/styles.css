@@ -28,7 +28,7 @@
     margin: 0 auto;
     padding: 100px;
     border-radius: 15px;
-    background-color: white;
+    background-color: #FFF5D9;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   }
 
@@ -57,7 +57,7 @@
   line-height: 80px;
   font-size: 24px; /* or whatever size you prefer */
   text-align: center;
-  background-color: white;
+  background-color: #FFF5D9;
   border: none;
   cursor: pointer;
   border-radius: 12px; /* rounded edges */
@@ -246,7 +246,7 @@ input:checked + .slider:before {
     margin: 0 auto;
     padding: 40px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #FFF5D9;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -690,7 +690,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #FFF5D9;
 }
 
 
