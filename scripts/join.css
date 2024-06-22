@@ -18,6 +18,13 @@ body {
   margin-top: -10px;
 }
 
+.logobadge {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
 .registration-container {
   background-color: #FFEAB1;
   padding: 30px;
@@ -29,11 +36,18 @@ body {
   z-index: 10;
 }
 
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .registration-container h1 {
   text-align: center;
   margin-bottom: 30px;
   color: #333333;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .registration-container form {
@@ -44,7 +58,7 @@ body {
 .registration-container label {
   margin-bottom: 10px;
   color: #555555;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .registration-container input {
@@ -52,22 +66,22 @@ body {
   margin-bottom: 20px;
   border: 1px solid #FFF5D9;
   background-color: #FFF5D9;
-  border-radius: 8px;
+  border-radius: 35px;
   font-size: 16px;
   transition: border-color 0.3s;
 }
 
 .registration-container input:focus {
-  border-color: #ff5722;
+  border-color: #DE4636;
   outline: none;
 }
 
 .registration-container button {
   padding: 15px;
-  background-color: #FF5722;
+  background-color: #DE4636;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s;
