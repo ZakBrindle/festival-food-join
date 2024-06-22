@@ -90,15 +90,15 @@ function adjustRegistrationContainer() {
   if (window.innerWidth < mobileThreshold) {
       registrationContainers.forEach(container => {
           container.style.maxWidth = '70%';
-          container.style.marginLeft = '30px';
-          container.style.marginRight = '-50px';
+          container.style.marginLeft = '10px';
+          container.style.marginRight = '-70px';
 
 
       });
       mainLogo.style.maxWidth = '90%';
       mainLogo.style.marginTop = '20px';
-      mainLogo.style.marginLeft = '30px';
-      mainLogo.style.marginRight = '-50px';
+      mainLogo.style.marginLeft = '10px';
+      mainLogo.style.marginRight = '-70px';
 
 
 
