@@ -87,7 +87,7 @@ function adjustRegistrationContainer() {
 
       registrationContainers.forEach(container => {
         container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
-        container.style.paddingLeft = '20px';
+        container.style.paddingLeft = '40px';
         container.style.paddingRight = '20px';
 
 
