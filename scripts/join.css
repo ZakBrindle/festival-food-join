@@ -1,12 +1,9 @@
-body {
-  position: relative;
-  height: 100vh;
+body, html {
+  height: 100%;
   margin: 0;
   background-color: #FFF5D9;
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -19,6 +16,13 @@ body {
   width: 100vw; /* Full viewport width */
   box-sizing: border-box;
   padding: 20px; /* Optional padding */
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -44,13 +48,6 @@ body {
   width: 100%;
   position: relative;
   z-index: 10;
-}
-
-.centered-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 .registration-container h1 {
@@ -99,6 +96,16 @@ body {
 
 .registration-container button:hover {
   background-color: #E64A19;
+}
+
+#centered-label {
+  text-align: center;
+}
+
+#centered-label label {
+  cursor: pointer;
+  color: blue; /* Adjust as needed */
+  text-decoration: underline;
 }
 
 .background-image {
