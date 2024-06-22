@@ -100,6 +100,8 @@ function adjustRegistrationContainer() {
       mainLogo.style.marginTop = '40px';
       mainLogo.style.paddingLeft = '40px';
       mainLogo.style.paddingRight = '40px';
+      mainLogo.style.maxWidth = '420px';
+
 
 
 
