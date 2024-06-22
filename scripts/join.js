@@ -80,10 +80,6 @@ function adjustRegistrationContainer() {
   const registrationContainers = document.querySelectorAll('.registration-container');
   const mainLogo = document.getElementById("logo");
 
-  const item1 = document.getElementById("coffee");
-  const item2 = document.getElementById("avacado");
-  const item3 = document.getElementById("borito");
-  const item4 = document.getElementById("strawberry");
 
 
 
@@ -102,10 +98,6 @@ function adjustRegistrationContainer() {
 
 
 
-      item1.hidden = true;
-      item2.hidden = true;
-      item3.hidden = true;
-      item4.hidden = true;
 
   } else {
       registrationContainers.forEach(container => {
@@ -117,11 +109,7 @@ function adjustRegistrationContainer() {
           mainLogo.style.marginTop = '-10px';
           mainLogo.style.marginLeft = '0px';          
           container.style.marginRight = '0px';
-          
-          item1.hidden = false;
-          item2.hidden = false;
-          item3.hidden = false;
-          item4.hidden = false;
+        
   }
 }
 
