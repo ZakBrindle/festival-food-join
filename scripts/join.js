@@ -84,6 +84,7 @@ function adjustRegistrationContainer() {
 
 
   if (window.innerWidth < mobileThreshold) {
+
       registrationContainers.forEach(container => {
         container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
         container.style.paddingLeft = '20px';
@@ -91,6 +92,10 @@ function adjustRegistrationContainer() {
 
 
       });
+
+
+      hideItemsOnSmallScreen();
+
       mainLogo.style.width = 'calc(100% - 40px)'; // 20px padding on each side
       mainLogo.style.marginTop = '40px';
       mainLogo.style.paddingLeft = '20px';
