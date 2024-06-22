@@ -85,30 +85,31 @@ function adjustRegistrationContainer() {
 
   if (window.innerWidth < mobileThreshold) {
       registrationContainers.forEach(container => {
-          container.style.maxWidth = '70%';
-          container.style.marginLeft = '10px';
-          container.style.marginRight = '-70px';
+        container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
+        container.style.paddingLeft = '20px';
+        container.style.paddingRight = '20px';
 
 
       });
-      mainLogo.style.maxWidth = '90%';
+      mainLogo.style.width = 'calc(100% - 40px)'; // 20px padding on each side
       mainLogo.style.marginTop = '40px';
-      mainLogo.style.marginLeft = '10px';
-      mainLogo.style.marginRight = '-70px';
+      mainLogo.style.paddingLeft = '20px';
+      mainLogo.style.paddingRight = '20px';
 
 
 
 
   } else {
       registrationContainers.forEach(container => {
-          container.style.maxWidth = '';
-          container.style.marginLeft = '0px';
-          container.style.marginRight = '0px'
+        container.style.width = ''; // Reset to original width
+        container.style.paddingLeft = '';
+        container.style.paddingRight = '';
               });
           mainLogo.style.maxWidth = '';
           mainLogo.style.marginTop = '-10px';
-          mainLogo.style.marginLeft = '0px';          
-          container.style.marginRight = '0px';
+          mainLogo.style.paddingRight = '';    
+          mainLogo.style.paddingLeft = '';    
+
         
   }
 }
