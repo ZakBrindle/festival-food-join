@@ -91,7 +91,7 @@ function adjustRegistrationContainer() {
       registrationContainers.forEach(container => {
           container.style.maxWidth = '70%';
           container.style.marginLeft = '30px';
-          container.style.marginRight = '30px';
+          container.style.marginRight = '-30px';
 
 
       });
