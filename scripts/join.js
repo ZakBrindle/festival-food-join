@@ -129,3 +129,54 @@ function adjustRegistrationContainer() {
 window.addEventListener('resize', adjustRegistrationContainer);
 window.addEventListener('load', adjustRegistrationContainer);
 
+
+
+
+   // Function to hide elements if the screen width is below 800px
+   function hideItemsOnSmallScreen() {
+    const items = [
+        document.getElementById("coffee"),
+        document.getElementById("avacado"),
+        document.getElementById("borito"),
+        document.getElementById("strawberry")
+    ];
+    
+    if (window.innerWidth < 800) {
+        items.forEach(item => {
+            if (item) {
+                item.classList.add('hidden');
+            }
+        });
+        // Store a flag in localStorage to indicate the items have been hidden
+        localStorage.setItem('itemsHidden', 'true');
+    }
+}
+
+// Function to check if items should be hidden based on localStorage flag
+function checkAndHideItems() {
+    if (localStorage.getItem('itemsHidden') === 'true') {
+        const items = [
+            document.getElementById("coffee"),
+            document.getElementById("avacado"),
+            document.getElementById("borito"),
+            document.getElementById("strawberry")
+        ];
+
+        items.forEach(item => {
+            if (item) {
+                item.classList.add('hidden');
+            }
+        });
+    }
+}
+
+// Initial check on page load
+window.onload = function() {
+    hideItemsOnSmallScreen();
+    checkAndHideItems();
+};
+
+// Optionally, you could also check on window resize (but not needed for this specific requirement)
+window.onresize = function() {
+    hideItemsOnSmallScreen();
+};
