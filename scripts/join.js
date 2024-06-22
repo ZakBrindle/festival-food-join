@@ -86,7 +86,9 @@ function adjustRegistrationContainer() {
   if (window.innerWidth < mobileThreshold) {
 
       registrationContainers.forEach(container => {
-       
+        container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
+        container.style.paddingLeft = '40px';
+        container.style.paddingRight = '20px';
 
 
       });
@@ -94,7 +96,11 @@ function adjustRegistrationContainer() {
 
       hideItemsOnSmallScreen();
 
-     
+      mainLogo.style.width = 'calc(100% - 80px)'; // 20px padding on each side
+      mainLogo.style.marginTop = '40px';
+      mainLogo.style.paddingLeft = '40px';
+      mainLogo.style.paddingRight = '40px';
+      mainLogo.style.maxWidth = '420px';
 
 
 
@@ -102,9 +108,14 @@ function adjustRegistrationContainer() {
 
   } else {
       registrationContainers.forEach(container => {
-       
+        container.style.width = ''; // Reset to original width
+        container.style.paddingLeft = '';
+        container.style.paddingRight = '';
               });
-           
+          mainLogo.style.width = '420px';
+          mainLogo.style.marginTop = '-10px';
+          mainLogo.style.paddingRight = '';    
+          mainLogo.style.paddingLeft = '';    
 
         
   }
