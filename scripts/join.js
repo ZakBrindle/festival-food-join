@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function adjustRegistrationContainer() {
-  const mobileThreshold = 768; // Set your mobile width threshold here
+  const mobileThreshold = 898; // Set your mobile width threshold here
   const registrationContainers = document.querySelectorAll('.registration-container');
   const mainLogo = document.getElementById("logo");
 
