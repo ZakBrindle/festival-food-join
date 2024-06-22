@@ -91,13 +91,15 @@ function adjustRegistrationContainer() {
       registrationContainers.forEach(container => {
           container.style.maxWidth = '70%';
           container.style.marginLeft = '30px';
-          container.style.marginRight = '-30px';
+          container.style.marginRight = '-50px';
 
 
       });
       mainLogo.style.maxWidth = '90%';
       mainLogo.style.marginTop = '20px';
-      mainLogo.style.marginLeft = '20px';
+      mainLogo.style.marginLeft = '30px';
+      mainLogo.style.marginRight = '-50px';
+
 
 
       item1.hidden = true;
@@ -109,6 +111,7 @@ function adjustRegistrationContainer() {
       registrationContainers.forEach(container => {
           container.style.maxWidth = '';
           container.style.marginLeft = '0px';
+          container.style.marginRight = '0px'
               });
           mainLogo.style.maxWidth = '';
           mainLogo.style.marginTop = '-10px';
