@@ -89,7 +89,12 @@ function adjustRegistrationContainer() {
   if (window.innerWidth < mobileThreshold) {
 
       registrationContainers.forEach(container => {
-        container.style.width = 'calc(100% - 40px)'; // 20px padding on each side
+        container.style.width = "100%"; 
+        container.style.maxWidth = "1000000px"; // 20px padding on each side
+       
+
+
+
         
 
 
@@ -111,7 +116,8 @@ function adjustRegistrationContainer() {
   } else {
       registrationContainers.forEach(container => {
         container.style.width = ''; // Reset to original width
-        
+        container.style.maxWidth = "400px"; // 20px padding on each side
+       
               });
           mainLogo.style.width = '420px';
           mainLogo.style.marginTop = '-10px';
