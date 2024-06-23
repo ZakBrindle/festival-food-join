@@ -105,10 +105,14 @@ function adjustRegistrationContainer() {
 
       mainLogo.style.width = 'calc(100% - 80px)'; // 20px padding on each side
       mainLogo.style.marginTop = '40px';
-      mainLogo.style.paddingLeft = '40px';
-      mainLogo.style.paddingRight = '40px';
+      mainLogo.style.marginBottom = '-10px';
+
+      mainLogo.style.marginLeft = '40px';
+      mainLogo.style.marginRight = '40px';
       mainLogo.style.maxWidth = '420px';
 
+      document.getElementById("joinForm").style.marginLeft = "25px";
+      document.getElementById("joinForm").style.marginRight = "25px";
 
 
 
@@ -121,8 +125,12 @@ function adjustRegistrationContainer() {
               });
           mainLogo.style.width = '420px';
           mainLogo.style.marginTop = '-10px';
-          mainLogo.style.paddingRight = '';    
-          mainLogo.style.paddingLeft = '';    
+          mainLogo.style.marginBottom = '';
+          mainLogo.style.marginRight = '';    
+          mainLogo.style.marginLeft = '';    
+
+          document.getElementById("joinForm").style.marginLeft = "0px";
+          document.getElementById("joinForm").style.marginRight = "0px";
 
         
   }
